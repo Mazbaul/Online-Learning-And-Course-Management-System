@@ -5,7 +5,7 @@ Simple mini-project created using QuickAdminPanel and Adminlte.
 
 ### Front-end view
 
-![Front-end view](https://www.dropbox.com/s/cddc3j16cyobkhc/6front%20view.png)
+![Front-end view](https://www.dropbox.com/home/Photos/Sample%20Album?preview=6front+view.png)
 
 ### Back-end view
 
