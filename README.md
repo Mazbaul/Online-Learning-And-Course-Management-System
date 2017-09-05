@@ -3,14 +3,27 @@
 Simple mini-project created using QuickAdminPanel and Adminlte.
 
 
-### Front-end view
+### Features
+- course Management
+- Lessons Management
+- User Management
+- Exam and result Management
+- Payment system Using Stripe
+- Question And Test 
 
-![Front-end view](https://www.dropbox.com/home/Photos/Sample%20Album?preview=6front+view.png)
-
-### Back-end view
 
 
-![Back-end view](https://www.dropbox.com/s/8bt9cxbr2yktuzi/backend.png)
+## How to Install
+
+- git clonehttps://github.com/bestmomo/laravel5-example.gitprojectname
+- cd projectname
+- composer install
+- php artisan key:generate
+- Create a database and inform .env
+- php artisan migrate --seed to create and      populate tables
+- php artisan serve to start the app on http://localhost:8000/
+
+Note:admin login email:admin@admin.com Password:password
 
 ### License
 
