@@ -1,16 +1,16 @@
 ## Laravel Learning Management System
 
-Simple mini-project created during live-coding sessions in 15 lessons. 
-[Watch them on YouTube](https://www.youtube.com/watch?v=8c107aufU9s&list=PLdXLsjL7A9k0NlUGL9M7ah9Fnvo3HybRl)
+Simple mini-project created using QuickAdminPanel and Adminlte.
 
-### Front-end view 
 
-![Front-end view](http://laraveldaily.com/wp-content/uploads/2017/08/Screen-Shot-2017-08-23-at-1.34.22-PM.png)
+### Front-end view
 
-### Back-end view 
-Generated with [QuickAdminPanel](https://quickadminpanel.com)
+![Front-end view](https://www.dropbox.com/s/cddc3j16cyobkhc/6front%20view.png?dl=0)
 
-![Back-end view](http://laraveldaily.com/wp-content/uploads/2017/08/Screen-Shot-2017-08-23-at-1.34.35-PM.png)
+### Back-end view
+
+
+![Back-end view](https://www.dropbox.com/s/8bt9cxbr2yktuzi/backend.png?dl=0)
 
 ### License
 
