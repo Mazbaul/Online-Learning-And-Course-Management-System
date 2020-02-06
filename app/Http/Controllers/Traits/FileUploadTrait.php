@@ -44,7 +44,7 @@ trait FileUploadTrait
                             $constraint->aspectRatio();
                         });
                     }
-                    $image->save(public_path('uploads') . '/' . $filename);
+                    Image::make($file)->resize(320, 150)->save(public_path('uploads') . '/' . $filename);
                     $finalRequest = new Request(array_merge($finalRequest->all(), [$key => $filename]));
                 } else {
                     $filename = time() . '-' . $request->file($key)->getClientOriginalName();
