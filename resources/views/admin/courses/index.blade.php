@@ -6,7 +6,7 @@
     @can('course_create')
     <p>
         <a href="{{ route('admin.courses.create') }}" class="btn btn-success">@lang('global.app_add_new')</a>
-        
+
     </p>
     @endcan
 
@@ -16,7 +16,7 @@
             <li><a href="{{ route('admin.courses.index') }}?show_deleted=1" style="{{ request('show_deleted') == 1 ? 'font-weight: 700' : '' }}">Trash</a></li>
         </ul>
     </p>
-    
+
 
     <div class="panel panel-default">
         <div class="panel-heading">
@@ -39,6 +39,7 @@
                         <th>@lang('global.courses.fields.description')</th>
                         <th>@lang('global.courses.fields.price')</th>
                         <th>@lang('global.courses.fields.course-image')</th>
+                        <th>Students</th>
                         <th>@lang('global.courses.fields.start-date')</th>
                         <th>@lang('global.courses.fields.published')</th>
                         @if( request('show_deleted') == 1 )
@@ -48,7 +49,7 @@
                         @endif
                     </tr>
                 </thead>
-                
+
                 <tbody>
                     @if (count($courses) > 0)
                         @foreach ($courses as $course)
@@ -69,6 +70,9 @@
                                 <td>{!! $course->description !!}</td>
                                 <td>{{ $course->price }}</td>
                                 <td>@if($course->course_image)<a href="{{ asset('uploads/' . $course->course_image) }}" target="_blank"><img src="{{ asset('uploads/thumb/' . $course->course_image) }}"/></a>@endif</td>
+                                <td>
+                                  {{ count($course->students) }}
+                                </td>
                                 <td>{{ $course->start_date }}</td>
                                 <td>{{ Form::checkbox("published", 1, $course->published == 1 ? true : false, ["disabled"]) }}</td>
                                 @if( request('show_deleted') == 1 )
@@ -120,7 +124,7 @@
     </div>
 @stop
 
-@section('javascript') 
+@section('javascript')
     <script>
         @can('course_delete')
             @if ( request('show_deleted') != 1 ) window.route_mass_crud_entries_destroy = '{{ route('admin.courses.mass_destroy') }}'; @endif
